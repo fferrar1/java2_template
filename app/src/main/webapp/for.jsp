@@ -5,22 +5,28 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>welcome</title>
+        <title>for</title>
     </head>
     <body>
+        <h1>For</h1>
         <%
-
-         String name = request.getParameter("name");
-
+        
+            for (int cont = 0; cont <= 10; cont++){
+                out.print("<br />" + cont);
+            }
 
         %>
-        <h1>Welcome</h1>
-        <%
 
-         out.print("Welcome " + name + "!!!");
-         
+        <h1>Foreach</h1>
+        <%
+            
+            int [] nums = {2,4,6,8,10,12,14,16,18,20};    
+
+            for (int n : nums) {
+                out.print("<br />" + n);
+            }
+
         %>
 
-        <p>be welcome, <%=name%></p>
     </body>
 </html>
